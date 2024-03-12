@@ -1,0 +1,7 @@
+querybase.my_page:
+  path: '/querybase'
+  defaults:
+    _controller: '\Drupal\queryapi\Controller\QueryApiController::queryBase'
+    _title: ''
+  requirements:
+    _permission: 'access content'

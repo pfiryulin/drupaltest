@@ -1,0 +1,25 @@
+name: drupaltest
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - drupaltest/base
+  - drupaltest/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - drupaltest/user
+  core/drupal.dropbutton:
+    - drupaltest/dropbutton
+  core/drupal.dialog:
+    - drupaltest/dialog
+  file/drupal.file:
+    - drupaltest/file
+  core/drupal.progress:
+    - drupaltest/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.2.3'
+regions:
+  news: 'News'
+  category: 'Category'  
